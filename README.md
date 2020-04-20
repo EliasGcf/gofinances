@@ -42,7 +42,7 @@
 
 ## 👨🏻‍💻 Projeto
 
-O GoFinances é uma aplicação completa (API REST, Web e Mobile) voltada para você que deseja realizar o controle manual de seus gastos. Tendo suporte ao o envio de arquivos CSV (Comma-separated values), facilitando o envio em massa de dados.
+O GoFinances é uma aplicação completa (API REST, Web e Mobile) voltada para você que deseja realizar o controle manual de seus gastos. Tendo suporte ao o envio de arquivos CSV (Comma-separated values), facilitando a inserção em massa de dados.
 
 ## 🚀 Tecnologias
 
