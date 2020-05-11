@@ -3,33 +3,35 @@
 </h1>
 
 <h3 align="center">
-  Serviço para controle de finanças
+  Finances control application
 </h3>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gofinances">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gofinances?color=%235636D3">
+
+  <a href="https://www.linkedin.com/in/eliasgcf/">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-elias%20gabriel-%235636D3">
+  </a>
   
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasGcf/gofinances">
-  
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/gofinances">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/gofinances?color=%235636D3">
   
   <a href="https://github.com/EliasGcf/gofinances/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/gofinances">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/gofinances?color=%235636D3">
   </a>
   
   <a href="https://github.com/EliasGcf/gofinances/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/gofinances">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/gofinances?color=%235636D3">
   </a>
   
-  <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gofinances">
+  <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gofinances?color=%235636D3">
 </p>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação-execução-e-desenvolvimento">Instalação, execução e desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
 
 <!-- <p id="insomniaButton" align="center">
@@ -40,13 +42,13 @@
 
 <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1587423410/gofinances/mockup_lqgnbt.png">
 
-## 👨🏻‍💻 Projeto
+## 💰 About the project
 
-O GoFinances é uma aplicação completa (API REST, Web e Mobile) voltada para você que deseja realizar o controle manual de seus gastos. Tendo suporte ao o envio de arquivos CSV (Comma-separated values), facilitando a inserção em massa de dados.
+GoFinances is the application for who want to control your finances. With the feature to import a CSV (Comma-separated values) file you can bulk insert a lot of transactions.
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esta aplicação foi desenolvida com as seguintes tecnologias:
+Technologies that I used to develop this api
 
 - [Node.js](https://nodejs.org/)
 - [ReactJS](https://reactjs.org/)
@@ -66,54 +68,65 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
 
-## 💻 Instalação, execução e desenvolvimento
+## 💻 Getting started
 
 <!-- Importe o arquivo `Insomnia.json` no Insomnia ou clique no botão [Run in Insomnia](#insomniaButton) -->
 
-### Pré-requisitos
+### Requirements
 
 - [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
-- [PostgreSQL](https://www.postgresql.org/)
+- [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- One instance of [PostgreSQL](https://www.postgresql.org/)
 
-**Faça um clone desse repositório e acesse o diretório**
+> Obs.: I recommend use docker
+
+**Clone the project and access the folder**
 
 ```bash
-git clone https://github.com/EliasGcf/gofinances.git
+$ git clone https://github.com/EliasGcf/gofinances.git && cd gofinances
 ```
+
+**Follow the steps below**
 
 ### Backend
 
 ```bash
-# A partir da raiz do projeto, entre na pasta do backend
+# Starting from the project root folder, go to backend folder
 $ cd server
 
-# Instale as dependências
+# Install the dependencies
 $ yarn
 
-# Tenha um banco de dados PostgreSQL em execução, exemplo:
+# Create the instance of postgreSQL using docker
 $ docker run --name gofinances-postgres -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=gofinances -p 5432:5432 -d postgres
 
-# Execute as migrations
+# Make sure the keys in 'ormconfig.json' to connect with your database
+# are set up correctly.
+
+# Once the services are running, run the migrations
 $ yarn typeorm migration:run
 
-# Tudo pronto para iniciar o servidor
+# To finish, run the api service
 $ yarn dev:server
+
+# Well done, project is started!
 ```
 
 ### Web
 
-_ps: Antes de executar, lembre-se de iniciar o backend deste projeto_
+_Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# A partir da raiz do projeto, entre na pasta do frontend web
+# Starting from the project root folder, go to frontend folder
 $ cd web
 
-# Instale as dependências
+# Install the dependencies
 $ yarn
 
-# Tudo pronto para iniciar o client
-$ yarn dev:server
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# Start the client
+$ yarn start
 ```
 
 ### Mobile
@@ -121,42 +134,44 @@ $ yarn dev:server
 <!-- _ps: Antes de executar, lembre-se de iniciar o backend deste projeto_ -->
 
 <p align="center">
- Ainda em desenvolvimento!
+ Yet in development!
  <br />
  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="loading">
 </p>
 
-## 🤔 Como contribuir
+## 🤔 How to contribute
 
-- **Faça um fork deste repositório**
+**Make a fork of this repository**
 
 ```bash
-# Fork via GitHub official command line
-# Caso não tenha o GitHub CLI, realize o fork pelo site.
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
 
 $ gh repo fork EliasGcf/gofinances
 ```
 
+**Follow the steps below**
+
 ```bash
-# Clone o seu fork
-$ git clone url-do-seu-fork && cd gofinances
+# Clone your fork
+$ git clone your-fork-url && cd gofinances
 
-# Crie uma branch com sua feature
-$ git checkout -b minha-feature
+# Create a branch with your feature
+$ git checkout -b my-feature
 
-# Faça o commit das suas alterações
-$ git commit -m 'feat: Minha nova feature'
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
 
-# Faça o push para a sua branch
-$ git push origin minha-feature
+# Send the code to your remote branch
+$ git push origin my-feature
 ```
 
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+After your pull request is merged, you can delete your branch
 
-## 📝 Licença
+## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feito com 💜 by [EliasGcf](https://www.linkedin.com/in/eliasgcf/)
+Made with 💜 by Elias Gabriel 👋 [See my linkedin](https://www.linkedin.com/in/eliasgcf/)
