@@ -8,21 +8,10 @@
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gofinances?color=%235636D3">
-
-  <a href="https://www.linkedin.com/in/eliasgcf/">
-    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-%235636D3">
-  </a>
-
+  <a href="https://www.linkedin.com/in/eliasgcf/"><img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-%235636D3"></a>
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/gofinances?color=%235636D3">
-
-  <a href="https://github.com/EliasGcf/gofinances/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/gofinances?color=%235636D3">
-  </a>
-
-  <a href="https://github.com/EliasGcf/gofinances/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/gofinances?color=%235636D3">
-  </a>
-
+  <a href="https://github.com/EliasGcf/gofinances/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/gofinances?color=%235636D3"></a>
+  <a href="https://github.com/EliasGcf/gofinances/issues"><img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/gofinances?color=%235636D3"></a>
   <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gofinances?color=%235636D3">
 </p>
 
@@ -174,4 +163,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with 💜 by Elias Gabriel 👋 [See my linkedin](https://www.linkedin.com/in/eliasgcf/)
+Made with 💜 &nbsp;by Elias Gabriel 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/eliasgcf/)
