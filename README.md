@@ -9,20 +9,18 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gofinances?color=%235636D3">
 
-  <a href="https://www.linkedin.com/in/eliasgcf/">
-    <img alt="Made by" src="https://img.shields.io/badge/made%20by-elias%20gabriel-%235636D3">
-  </a>
-  
+  <img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-%235636D3?link=https://www.linkedin.com/in/eliasgcf/&link=https://www.linkedin.com/in/eliasgcf/">
+
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/gofinances?color=%235636D3">
-  
+
   <a href="https://github.com/EliasGcf/gofinances/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/gofinances?color=%235636D3">
   </a>
-  
+
   <a href="https://github.com/EliasGcf/gofinances/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/gofinances?color=%235636D3">
   </a>
-  
+
   <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/gofinances?color=%235636D3">
 </p>
 
