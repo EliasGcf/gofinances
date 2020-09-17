@@ -9,7 +9,9 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/gofinances?color=%235636D3">
 
-  <img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-%235636D3?link=https://www.linkedin.com/in/eliasgcf/&link=https://www.linkedin.com/in/eliasgcf/">
+  <a href="https://www.linkedin.com/in/eliasgcf/">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-%235636D3">
+  </a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/gofinances?color=%235636D3">
 
