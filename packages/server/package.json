@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "start": "ts-node src/index.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "typeorm": "ts-node-dev ./node_modules/.bin/typeorm",
     "test": "cross-env NODE_ENV=test jest"
   },
   "dependencies": {
