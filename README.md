@@ -64,7 +64,7 @@ Technologies that I used to develop this api
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
-- [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- [Yarn](https://classic.yarnpkg.com/)
 - One instance of [PostgreSQL](https://www.postgresql.org/)
 
 > Obs.: I recommend use docker
@@ -75,28 +75,28 @@ Technologies that I used to develop this api
 $ git clone https://github.com/EliasGcf/gofinances.git && cd gofinances
 ```
 
+**Install dependencies**
+
+```bash
+$ yarn
+```
+
 **Follow the steps below**
 
 ### Backend
 
 ```bash
-# Starting from the project root folder, go to backend folder
-$ cd server
-
-# Install the dependencies
-$ yarn
-
 # Create the instance of postgreSQL using docker
 $ docker run --name gofinances-postgres -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=gofinances -p 5432:5432 -d postgres
 
-# Make sure the keys in 'ormconfig.json' to connect with your database
-# are set up correctly.
+# Make sure the keys in 'packages/server/ormconfig.json'
+# to connect with your database are set up correctly.
 
 # Once the services are running, run the migrations
-$ yarn typeorm migration:run
+$ yarn server typeorm migration:run
 
 # To finish, run the api service
-$ yarn dev:server
+$ yarn server dev:server
 
 # Well done, project is started!
 ```
@@ -106,16 +106,10 @@ $ yarn dev:server
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# Starting from the project root folder, go to frontend folder
-$ cd web
-
-# Install the dependencies
-$ yarn
-
-# Be sure the file 'src/services/api.ts' have the IP to your API
+# Be sure the file 'packages/web/src/services/api.ts' have the IP to your API
 
 # Start the client
-$ yarn start
+$ yarn web start
 ```
 
 ### Mobile
